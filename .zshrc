@@ -89,6 +89,11 @@ alias ls='ls --color=tty --show-control-chars'
 alias ll='ls -lh'
 alias grep='grep --color'
 
+# git aliases
+alias gt='git status'
+alias gpush='git push -u origin master'
+
+
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]%}%n) \
