@@ -1,0 +1,22 @@
+" This file will be loaded at the end of .vimrc.
+" This file is designed to add your own vim scripts or override the exVim's .vimrc settings.
+colorscheme Tomorrow-Night-Eighties
+
+imap jj <Esc>
+nnoremap <silent> <F3> @q
+
+nnoremap <F2> :set invpaste paste?<CR>
+imap <F2> <C-O>:set invpaste paste?<CR>
+set pastetoggle=<F2>
+
+set isfname=@,48-57,/,.,-,_,+,#,$,%,~,=
+
+set mouse=
+
+set wrap
+
+set completeopt=preview
+
+"let g:SuperTabDefaultCompletionType="<c-n>"
+let g:SuperTabContextDefaultCompletionType ="<c-n>"
+let g:SuperTabRetainCompletionType=2
