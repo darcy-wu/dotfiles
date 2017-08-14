@@ -1,6 +1,8 @@
 import pandas as pd
 from pandas import Series, DataFrame
 
+pd.set_option('display.width', 120)
+
 def abcrange(n, prefix = ''):
     str = 'abcdefghij'
     r = []

@@ -93,6 +93,8 @@ alias grep='grep --color'
 alias gt='git status'
 alias gpush='git push -u origin master'
 
+alias noteboot='jupyter notebook --no-browser'
+
 
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
