@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-  export PATH=".:/home/kuikuiwu/myapps/bin:/bin:/usr/bin:/usr/local/bin:/usr/lib/lapack"
+  export PATH=".:/bin:/usr/bin:/usr/local/bin"
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kuikuiwu/.oh-my-zsh
+  export ZSH=/home/darcy/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -88,6 +88,7 @@ alias vi='vim'
 alias ls='ls --color=tty --show-control-chars'
 alias ll='ls -lh'
 alias grep='grep --color'
+alias cdp='cd ~/projects'
 
 # git aliases
 alias gt='git status'
@@ -108,7 +109,14 @@ ${hg_info}\
 
 export DISPLAY=:0.0
 
-# for autojump
-[[ -s /home/kuikuiwu/.autojump/etc/profile.d/autojump.sh ]] && source /home/kuikuiwu/.autojump/etc/profile.d/autojump.sh
+export LSCOLORS="Gxfxcxdxbxexexaxaxaxax"
+export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=00;33:so=01;35:do=01;35:bd=00;33;01:cd=00;33;01:or=01;33;01:ex=00;32:'
+
 autoload -U compinit && compinit -u
 
+#export LC_ALL=C
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
+cd $HOME
+eval `dircolors .dircolors`
